@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sentiment Analysis of Restaurant Reviews</title>
+</head>
+<body>
+    <header>
+        <h1>Sentiment Analysis of Restaurant Reviews</h1>
+        <!-- You can add a project logo here if applicable -->
+    </header>
+    <form action="/analyze" method="post">
+
+    <div class="container">
+        <div class="input-section">
+            <label for="reviewInput">Enter your restaurant review here:</label>
+            <textarea id="reviewInput" placeholder="Enter your restaurant review here..."></textarea>
+            <button id="analyzeButton">Analyze Review</button>
+        </div>
+        <div class="result-section">
+            <h2>Analysis Result</h2>
+            <p><strong>Sentiment:</strong> Positive</p>
+            <!--<p><strong>Confidence:</strong> <span id="confidenceResult"></span></p> --> 
+            <!--<p><strong>Accuracy:</strong> <span id="accuracyResult"></span></p>-->
+        </div>
+        <div class="messages">
+            <p id="instructionMessage">Instructions: Enter your restaurant review in the text box above and click 'Analyze Review' to see the sentiment prediction.</p>
+            <p id="feedbackMessage"></p>
+        </div>
+    </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
